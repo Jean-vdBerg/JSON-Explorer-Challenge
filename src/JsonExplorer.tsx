@@ -70,7 +70,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
     }
   };
 
-  const constructJSON = () => {
+  const constructJson = () => {
     const jsonDataString = JSON.stringify(jsonData, null, 2);
     const jsonDataLines = jsonDataString.split("\n");
     jsonDataLines.pop();
@@ -141,7 +141,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
         <Typography>{selectedValue}</Typography>
         <pre>
           <Typography>Response</Typography>
-          <List>{constructJSON()}</List>
+          <List>{constructJson()}</List>
         </pre>
       </header>
     </div>
