@@ -64,9 +64,9 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
 
   const findParameter = (path: string) => {
     setSelectedPath(path);
-    const blahPath = path.substring("res.".length).replace(/\[(\d+)\]/g, ".$1");
-    if (flatJsonData[blahPath] !== undefined) {
-      setSelectedValue(flatJsonData[blahPath]);
+    const fullPath = path.substring("res.".length).replace(/\[(\d+)\]/g, ".$1");
+    if (flatJsonData[fullPath] !== undefined) {
+      setSelectedValue(flatJsonData[fullPath]);
     }
   };
 
