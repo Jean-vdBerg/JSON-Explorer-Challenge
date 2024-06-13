@@ -57,7 +57,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
         >
           {trimmedKey}
         </Link>
-        : {value}
+        :{value}
       </>
     );
   };
@@ -113,7 +113,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
                   constructLink(key, value, hasValue, path)
                 ) : (
                   <>
-                    {key}: {value}
+                    {key}:{value}
                   </>
                 )
               ) : (
