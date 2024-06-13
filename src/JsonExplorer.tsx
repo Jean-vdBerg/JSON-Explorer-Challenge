@@ -76,7 +76,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
     jsonDataLines.pop();
     jsonDataLines.shift();
 
-    const formattedJSON = [];
+    const formattedJson = [];
 
     let dataIndex = 0;
 
@@ -103,7 +103,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
         key = line;
       }
 
-      formattedJSON.push(
+      formattedJson.push(
         <ListItem key={index} sx={{ paddingY: 0 }}>
           <ListItemText
             sx={{ marginY: "0px" }}
@@ -125,7 +125,7 @@ function JsonExplorer({ jsonData }: JsonExplorerProps) {
       );
     }
 
-    return formattedJSON;
+    return formattedJson;
   };
 
   return (
