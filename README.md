@@ -1,2 +1,13 @@
 # JSON-Explorer-Challenge
-JSON Explorer Challenge from Heyflow
+
+Install dependencies using
+
+```bash
+$ npm install
+```
+
+Run the app using
+
+```bash
+$ npm run start
+```
